@@ -77,7 +77,7 @@ dependencies {
     modImplementation "me.shedaniel.cloth:cloth-config-fabric:${project.clothconfig_version}"
     modImplementation "com.terraformersmc:modmenu:${project.modmenu_version}"
     // compatibility
-    //modImplementation "curse.maven:craftablelava-678266:${project.craftablelava_cursed_id}"
+    modImplementation "curse.maven:craftablelava-678266:${project.craftablelava_cursed_id}"
     modImplementation "curse.maven:farmers-delight-fabric-482834:${project.farmersdelight_cursed_id}"
     modImplementation "curse.maven:midnightlib-488090:${project.midnightlib_cursed_id}"
     modImplementation "curse.maven:this-rocks-416283:${project.rocks_cursed_id}"

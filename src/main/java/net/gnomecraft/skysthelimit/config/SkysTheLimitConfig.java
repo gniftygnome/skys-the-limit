@@ -46,5 +46,8 @@ public class SkysTheLimitConfig implements ConfigData {
     public Boolean stonesToCobblestone = true;
 
     @ConfigEntry.Category("recipes")
+    public Boolean stonesToStoneBucket = true;
+
+    @ConfigEntry.Category("recipes")
     public Boolean stringToRope = true;
 }

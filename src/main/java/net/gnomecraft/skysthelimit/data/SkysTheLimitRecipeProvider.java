@@ -17,6 +17,7 @@ import net.minecraft.data.server.recipe.ShapelessRecipeJsonBuilder;
 import net.minecraft.item.Items;
 import net.minecraft.predicate.item.ItemPredicate;
 import net.minecraft.util.Identifier;
+import net.wondiws98.craftablelava.item.LavaCrucible;
 
 import java.util.Collections;
 import java.util.function.Consumer;
@@ -59,11 +60,6 @@ public class SkysTheLimitRecipeProvider extends FabricRecipeProvider {
                 .criterion("has_seeds", InventoryChangedCriterion.Conditions.items(Items.WHEAT_SEEDS))
                 .offerTo(withConditions(exporter, SkysTheLimitResourceConditions.allConfigBooleansEnabled("dirtToGrassBlock")));
 
-        offerSmelting(withConditions(exporter, SkysTheLimitResourceConditions.allConfigBooleansEnabled("snowToWater")),
-                Collections.singletonList(Items.POWDER_SNOW_BUCKET),
-                Items.WATER_BUCKET,
-                0.1f, 200, "smelting");
-
         new ShapedRecipeJsonBuilder(ItemsRegistry.ROPE.get(), 1)
                 .group("rope")
                 .pattern("s  ")
@@ -86,6 +82,18 @@ public class SkysTheLimitRecipeProvider extends FabricRecipeProvider {
                 .criterion("has_leather", InventoryChangedCriterion.Conditions.items(Items.LEATHER))
                 .offerTo(withConditions(exporter, SkysTheLimitResourceConditions.allConfigBooleansEnabled("craftableSaddle")));
 
+        new ShapelessRecipeJsonBuilder(LavaCrucible.CRUCIBLE, 1)
+                .group("misc")
+                .input(Items.BUCKET)
+                .input(RocksMain.CobblestoneSplitter)
+                .input(RocksMain.CobblestoneSplitter)
+                .input(RocksMain.CobblestoneSplitter)
+                .input(RocksMain.CobblestoneSplitter)
+                .input(RocksMain.CobblestoneSplitter)
+                .input(RocksMain.CobblestoneSplitter)
+                .criterion("has_cobble_stones", InventoryChangedCriterion.Conditions.items(RocksMain.CobblestoneSplitter))
+                .offerTo(withConditions(exporter, SkysTheLimitResourceConditions.allConfigBooleansEnabled("stonesToStoneBucket")));
+
         new ShapedRecipeJsonBuilder(Items.STRING, 1)
                 .group("string")
                 .pattern("bb ")
@@ -96,6 +104,11 @@ public class SkysTheLimitRecipeProvider extends FabricRecipeProvider {
                 .offerTo(withConditions(exporter,
                         DefaultResourceConditions.allModsLoaded(FarmersDelightMod.MOD_ID),
                         SkysTheLimitResourceConditions.allConfigBooleansEnabled("barkToString")));
+
+        offerSmelting(withConditions(exporter, SkysTheLimitResourceConditions.allConfigBooleansEnabled("snowToWater")),
+                Collections.singletonList(Items.POWDER_SNOW_BUCKET),
+                Items.WATER_BUCKET,
+                0.1f, 200, "smelting");
     }
 
     @Override
