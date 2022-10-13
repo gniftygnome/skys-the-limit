@@ -17,6 +17,7 @@ import net.minecraft.data.server.recipe.ShapelessRecipeJsonBuilder;
 import net.minecraft.item.Items;
 import net.minecraft.predicate.item.ItemPredicate;
 import net.minecraft.util.Identifier;
+import net.wondiws98.craftablelava.CraftableLavaMain;
 import net.wondiws98.craftablelava.item.LavaCrucible;
 
 import java.util.Collections;
@@ -92,7 +93,9 @@ public class SkysTheLimitRecipeProvider extends FabricRecipeProvider {
                 .input(RocksMain.CobblestoneSplitter)
                 .input(RocksMain.CobblestoneSplitter)
                 .criterion("has_cobble_stones", InventoryChangedCriterion.Conditions.items(RocksMain.CobblestoneSplitter))
-                .offerTo(withConditions(exporter, SkysTheLimitResourceConditions.allConfigBooleansEnabled("stonesToStoneBucket")));
+                .offerTo(withConditions(exporter,
+                        DefaultResourceConditions.allModsLoaded(CraftableLavaMain.MOD_ID, RocksMain.MOD_ID),
+                        SkysTheLimitResourceConditions.allConfigBooleansEnabled("stonesToStoneBucket")));
 
         new ShapedRecipeJsonBuilder(Items.STRING, 1)
                 .group("string")
