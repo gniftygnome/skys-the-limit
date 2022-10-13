@@ -1,0 +1,14 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "net.gnomecraft.skysthelimit.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "mixins": [
+    "MixinPointedDripstoneBlock"
+  ],
+  "client": [
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

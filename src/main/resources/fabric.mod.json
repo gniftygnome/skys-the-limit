@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "id": "skys-the-limit",
+  "version": "${version}",
+  "name": "Skys the Limit",
+  "description": "Support mod for Gnomecraft sky block games",
+  "authors": [
+    "GniftyGnome"
+  ],
+  "contact": {
+    "website": "https://github.com/gniftygnome/skys-the-limit",
+    "repo": "https://github.com/gniftygnome/skys-the-limit"
+  },
+  "license": "MIT",
+  "icon": "assets/skys-the-limit/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "net.gnomecraft.skysthelimit.SkysTheLimitClient"
+    ],
+    "main": [
+      "net.gnomecraft.skysthelimit.SkysTheLimit"
+    ],
+    "fabric-datagen": [
+      "net.gnomecraft.skysthelimit.data.SkysTheLimitDatagen"
+    ],
+    "modmenu": [
+      "net.gnomecraft.skysthelimit.config.SkysTheLimitModMenuApiImpl"
+    ]
+  },
+  "accessWidener": "skys-the-limit.accesswidener",
+  "mixins": [
+    "skys-the-limit.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.13.3",
+    "fabric": ">=0.58.0",
+    "minecraft": ">=1.19 <1.20",
+    "cloth-config": "*"
+  }
+}

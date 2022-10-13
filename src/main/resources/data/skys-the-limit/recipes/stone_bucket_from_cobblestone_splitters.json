@@ -1,0 +1,38 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:bucket"
+    },
+    {
+      "item": "rocks:cobblestone_splitter"
+    },
+    {
+      "item": "rocks:cobblestone_splitter"
+    },
+    {
+      "item": "rocks:cobblestone_splitter"
+    },
+    {
+      "item": "rocks:cobblestone_splitter"
+    },
+    {
+      "item": "rocks:cobblestone_splitter"
+    },
+    {
+      "item": "rocks:cobblestone_splitter"
+    }
+  ],
+  "result": {
+    "item": "craftablelava:stone_bucket"
+  },
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "craftablelava",
+        "rocks"
+      ]
+    }
+  ]
+}
