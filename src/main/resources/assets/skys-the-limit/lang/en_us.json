@@ -21,6 +21,7 @@
   "text.autoconfig.skys-the-limit.option.craftableSaddle": "Craft saddles?",
   "text.autoconfig.skys-the-limit.option.dirtToGrassBlock": "Craft grass blocks from dirt and wheat seeds?",
   "text.autoconfig.skys-the-limit.option.snowToWater": "Smelt powder snow buckets into water buckets?",
-  "text.autoconfig.skys-the-limit.option.stonesToCobblestone": "Craft mixed stones into cobblestone?",
+  "text.autoconfig.skys-the-limit.option.stonesToStoneBucket": "Craft mixed stones into cobblestone?",
+  "text.autoconfig.skys-the-limit.option.stonesToCobblestone": "Craft cobble stones into stone bucket?",
   "text.autoconfig.skys-the-limit.option.stringToRope": "Craft string into rope?"
 }
