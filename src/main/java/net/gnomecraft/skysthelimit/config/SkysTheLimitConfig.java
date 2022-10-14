@@ -21,6 +21,20 @@ public class SkysTheLimitConfig implements ConfigData {
     public Boolean fogCatcher = true;
 
 
+    @ConfigEntry.Category("composter")
+    @ConfigEntry.Gui.PrefixText
+    public Boolean compostBamboo = true;
+
+    @ConfigEntry.Category("composter")
+    public Boolean compostFish = true;
+
+    @ConfigEntry.Category("composter")
+    public Boolean compostLeather = true;
+
+    @ConfigEntry.Category("composter")
+    public Boolean compostPotatoes = true;
+
+
     @ConfigEntry.Category("fishing")
     @ConfigEntry.Gui.PrefixText
     public Boolean oceanLoot = true;

@@ -10,6 +10,13 @@
   "text.autoconfig.skys-the-limit.option.fogCatcher.@PrefixText": "You must restart Minecraft after changing settings below.",
   "text.autoconfig.skys-the-limit.option.fogCatcher": "Enable the Fog Catcher block?",
 
+  "text.autoconfig.skys-the-limit.category.composter":  "Composter",
+  "text.autoconfig.skys-the-limit.option.compostBamboo.@PrefixText": "You must restart Minecraft after changing settings below.",
+  "text.autoconfig.skys-the-limit.option.compostBamboo": "Allow composting bamboo?",
+  "text.autoconfig.skys-the-limit.option.compostFish": "Allow composting various fish?",
+  "text.autoconfig.skys-the-limit.option.compostLeather": "Allow composting leather items?",
+  "text.autoconfig.skys-the-limit.option.compostPotatoes": "Allow composting poisonous potatoes?",
+
   "text.autoconfig.skys-the-limit.category.fishing": "Fishing",
   "text.autoconfig.skys-the-limit.option.oceanLoot.@PrefixText": "You must restart Minecraft after changing settings below.",
   "text.autoconfig.skys-the-limit.option.oceanLoot": "Add more ocean loot?",
