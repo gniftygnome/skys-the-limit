@@ -86,12 +86,12 @@ public class SkysTheLimitRecipeProvider extends FabricRecipeProvider {
         new ShapelessRecipeJsonBuilder(LavaCrucible.CRUCIBLE, 1)
                 .group("misc")
                 .input(Items.BUCKET)
-                .input(RocksMain.CobblestoneSplitter)
-                .input(RocksMain.CobblestoneSplitter)
-                .input(RocksMain.CobblestoneSplitter)
-                .input(RocksMain.CobblestoneSplitter)
-                .input(RocksMain.CobblestoneSplitter)
-                .input(RocksMain.CobblestoneSplitter)
+                .input(SkysTheLimitItemTags.COMMON_STONES)
+                .input(SkysTheLimitItemTags.COMMON_STONES)
+                .input(SkysTheLimitItemTags.COMMON_STONES)
+                .input(SkysTheLimitItemTags.COMMON_STONES)
+                .input(SkysTheLimitItemTags.COMMON_STONES)
+                .input(SkysTheLimitItemTags.COMMON_STONES)
                 .criterion("has_cobble_stones", InventoryChangedCriterion.Conditions.items(RocksMain.CobblestoneSplitter))
                 .offerTo(withConditions(exporter,
                         DefaultResourceConditions.allModsLoaded(CraftableLavaMain.MOD_ID, RocksMain.MOD_ID),

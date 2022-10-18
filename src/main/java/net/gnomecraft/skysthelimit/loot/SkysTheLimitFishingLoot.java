@@ -15,8 +15,13 @@ public class SkysTheLimitFishingLoot {
         SkysTheLimitConfig config = SkysTheLimit.getConfig();
 
         LootTableEvents.MODIFY.register((resourceManager, lootManager, id, tableBuilder, source) -> {
-            // Add copper and prismarine things to fishing loot.
+            // Add Ocean-related things to fishing loot.
             if (config.oceanLoot) {
+                if (source.isBuiltin() && LootTables.FISHING_JUNK_GAMEPLAY.equals(id)) {
+                    tableBuilder.modifyPools((pools) -> {
+                        pools.with(ItemEntry.builder(Items.KELP).weight(2));
+                    });
+                }
                 if (source.isBuiltin() && LootTables.FISHING_TREASURE_GAMEPLAY.equals(id)) {
                     tableBuilder.modifyPools((pools) -> {
                         pools.with(ItemEntry.builder(Items.COPPER_INGOT))
