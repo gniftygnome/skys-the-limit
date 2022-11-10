@@ -28,8 +28,8 @@ public class ResourceConditionsImpl {
             public void writeParameters(JsonObject object) {
                 JsonArray array = new JsonArray();
 
-                for (String modId : configBooleans) {
-                    array.add(modId);
+                for (String fieldName : configBooleans) {
+                    array.add(fieldName);
                 }
 
                 object.add("values", array);
@@ -46,7 +46,7 @@ public class ResourceConditionsImpl {
                     return !and;
                 }
             } else {
-                throw new JsonParseException("Invalid mod id entry: " + element);
+                throw new JsonParseException("Invalid config field entry: " + element);
             }
         }
 
