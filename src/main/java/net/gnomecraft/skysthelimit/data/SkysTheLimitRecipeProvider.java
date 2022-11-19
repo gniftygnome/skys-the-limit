@@ -61,6 +61,15 @@ public class SkysTheLimitRecipeProvider extends FabricRecipeProvider {
                 .criterion("has_seeds", InventoryChangedCriterion.Conditions.items(Items.WHEAT_SEEDS))
                 .offerTo(withConditions(exporter, SkysTheLimitResourceConditions.allConfigBooleansEnabled("dirtToGrassBlock")));
 
+        new ShapelessRecipeJsonBuilder(Items.MOSS_BLOCK, 2)
+                .group("moss")
+                .input(Items.BONE_MEAL)
+                .input(Items.MOSS_CARPET)
+                .input(Items.MOSS_CARPET)
+                .input(Items.MOSS_CARPET)
+                .criterion("has_moss", InventoryChangedCriterion.Conditions.items(Items.MOSS_CARPET))
+                .offerTo(withConditions(exporter, SkysTheLimitResourceConditions.allConfigBooleansEnabled("mossCarpetToBlocks")));
+
         new ShapedRecipeJsonBuilder(ItemsRegistry.ROPE.get(), 1)
                 .group("rope")
                 .pattern("s  ")
