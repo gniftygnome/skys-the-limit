@@ -18,6 +18,7 @@ This mod provides support for the Gnomecraft sky block ecosystem; namely:
 * Adding recipes and loot for vanilla Minecraft features to improve sky block play.
   * Adds more ocean-related treasure loot to fishing.
   * Recipe for crafting dirt and wheat seeds into grass blocks.
+  * Recipe for crafting moss carpets and bone meal into moss blocks.
   * Recipe for crafting leather, string, and iron into saddles.  (But why?  Nobody knows...)
 * In select cases when no existing mod seems to work, adding entire new sky block game features.
   * Fog Catcher, an added block used to capture water from the fog that exists everywhere in Minecraft.
