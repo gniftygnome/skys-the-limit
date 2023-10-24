@@ -6,9 +6,11 @@ import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;
 public class SkysTheLimitDatagen implements DataGeneratorEntrypoint {
     @Override
     public void onInitializeDataGenerator(FabricDataGenerator dataGenerator) {
-        dataGenerator.addProvider(SkysTheLimitBlockLootTableProvider::new);
-        dataGenerator.addProvider(SkysTheLimitBlockTagProvider::new);
-        dataGenerator.addProvider(SkysTheLimitItemTagProvider::new);
-        dataGenerator.addProvider(SkysTheLimitRecipeProvider::new);
+        FabricDataGenerator.Pack pack = dataGenerator.createPack();
+
+        pack.addProvider(SkysTheLimitBlockLootTableProvider::new);
+        SkysTheLimitBlockTagProvider blockTagProvider = pack.addProvider(SkysTheLimitBlockTagProvider::new);
+        pack.addProvider((output, registries) -> new SkysTheLimitItemTagProvider(output, registries, blockTagProvider));
+        pack.addProvider(SkysTheLimitRecipeProvider::new);
     }
 }

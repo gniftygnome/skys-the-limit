@@ -9,6 +9,7 @@ import net.gnomecraft.skysthelimit.config.SkysTheLimitConfig;
 import net.gnomecraft.skysthelimit.fabricresourcecondition.SkysTheLimitResourceConditions;
 import net.gnomecraft.skysthelimit.item.SkysTheLimitItems;
 import net.gnomecraft.skysthelimit.loot.SkysTheLimitFishingLoot;
+import net.gnomecraft.skysthelimit.tag.SkysTheLimitBlockTags;
 import net.gnomecraft.skysthelimit.tag.SkysTheLimitItemTags;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -26,6 +27,7 @@ public class SkysTheLimit implements ModInitializer {
         SkysTheLimitBlocks.init();
         SkysTheLimitItems.init();
         SkysTheLimitCompostMoreItems.init();
+        SkysTheLimitBlockTags.init();
         SkysTheLimitItemTags.init();
         SkysTheLimitFishingLoot.init();
 

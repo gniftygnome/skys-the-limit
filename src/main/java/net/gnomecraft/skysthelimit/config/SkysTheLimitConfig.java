@@ -48,6 +48,9 @@ public class SkysTheLimitConfig implements ConfigData {
     public Boolean barkToString = true;
 
     @ConfigEntry.Category("recipes")
+    public Boolean blastCobbleToLava = true;
+
+    @ConfigEntry.Category("recipes")
     public Boolean craftableSaddle = true;
 
     @ConfigEntry.Category("recipes")
@@ -55,6 +58,9 @@ public class SkysTheLimitConfig implements ConfigData {
 
     @ConfigEntry.Category("recipes")
     public Boolean mossCarpetToBlocks = true;
+
+    @ConfigEntry.Category("recipes")
+    public Boolean smeltDirtToIron = true;
 
     @ConfigEntry.Category("recipes")
     public Boolean snowToWater = true;

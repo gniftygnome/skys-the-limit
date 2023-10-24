@@ -61,7 +61,7 @@ public class FogCatcherBlock extends Block {
             }
             // Twice as fast in the wettest biomes as in the driest.
             else {
-                localizedDripChance *= 0.5f + 0.5f * world.getBiome(pos).value().getDownfall();
+                localizedDripChance *= 0.5f + 0.5f * world.getBiome(pos).value().weather.downfall();
             }
         }
         if (dripChance > localizedDripChance) {
@@ -82,7 +82,7 @@ public class FogCatcherBlock extends Block {
 
         // Tell the cauldron to get to work.
         world.syncWorldEvent(1504, pos, 0);
-        world.createAndScheduleBlockTick(cauldronPos,
+        world.scheduleBlockTick(cauldronPos,
                 world.getBlockState(cauldronPos).getBlock(),
                 50 + pos.getY() - cauldronPos.getY());
     }
