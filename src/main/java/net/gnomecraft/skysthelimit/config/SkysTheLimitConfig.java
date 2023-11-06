@@ -60,6 +60,9 @@ public class SkysTheLimitConfig implements ConfigData {
     public Boolean mossCarpetToBlocks = true;
 
     @ConfigEntry.Category("recipes")
+    public Boolean richSoilToMycelium = true;
+
+    @ConfigEntry.Category("recipes")
     public Boolean smeltDirtToIron = true;
 
     @ConfigEntry.Category("recipes")

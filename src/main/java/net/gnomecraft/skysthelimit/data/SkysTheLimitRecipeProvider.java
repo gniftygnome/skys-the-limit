@@ -80,6 +80,16 @@ public class SkysTheLimitRecipeProvider extends FabricRecipeProvider {
                 .criterion("has_seeds", InventoryChangedCriterion.Conditions.items(Items.WHEAT_SEEDS))
                 .offerTo(withConditions(exporter, SkysTheLimitResourceConditions.allConfigBooleansEnabled("dirtToGrassBlock")));
 
+        new ShapedRecipeJsonBuilder(RecipeCategory.BUILDING_BLOCKS, Items.MYCELIUM, 1)
+                .group("dirt")
+                .pattern("mmm")
+                .pattern("mdm")
+                .pattern("mmm")
+                .input('d', ItemsRegistry.RICH_SOIL.get())
+                .input('m', Ingredient.ofItems(Items.BROWN_MUSHROOM, Items.RED_MUSHROOM))
+                .criterion("has_mushrooms", InventoryChangedCriterion.Conditions.items(ItemsRegistry.RICH_SOIL.get()))
+                .offerTo(withConditions(exporter, SkysTheLimitResourceConditions.allConfigBooleansEnabled("richSoilToMycelium")));
+
         new ShapelessRecipeJsonBuilder(RecipeCategory.BUILDING_BLOCKS, Items.MOSS_BLOCK, 2)
                 .group("moss")
                 .input(Items.BONE_MEAL)

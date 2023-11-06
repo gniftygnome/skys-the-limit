@@ -3,15 +3,14 @@
     {
       "condition": "fabric:all_mods_loaded",
       "values": [
-        "farmersdelight",
-        "terrestria"
+        "farmersdelight"
       ]
     }
   ],
   "type": "farmersdelight:cutting",
   "ingredients": [
     {
-      "item": "terrestria:cherry_log"
+      "item": "minecraft:cherry_log"
     }
   ],
   "tool": {
@@ -20,7 +19,7 @@
   },
   "result": [
     {
-      "item": "terrestria:stripped_cherry_log"
+      "item": "minecraft:stripped_cherry_log"
     },
     {
       "item": "farmersdelight:tree_bark"
