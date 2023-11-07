@@ -15,6 +15,8 @@ This mod provides support for the Gnomecraft sky block ecosystem; namely:
   * Recipe for crafting mixed This Rocks! stone splitters into cobblestone. 
   * Recipe for crafting Farmer's Delight tree bark into string.
   * Recipe for crafting string into Farmer's Delight rope.
+  * Recipe for crafting mycelium from mushrooms and Farmer's Delight rich soil.
+  * Farmer's Delight cutting board recipes for Traverse, Terrestria, and Cinderscapes logs.
 * Adding recipes and loot for vanilla Minecraft features to improve sky block play.
   * Adds more ocean-related treasure loot to fishing.
   * Adds Overworld base stone to vanilla tool crafting recipes.
