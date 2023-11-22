@@ -3,6 +3,8 @@ package net.gnomecraft.skysthelimit.data;
 import com.nhoryzon.mc.farmersdelight.FarmersDelightMod;
 import com.nhoryzon.mc.farmersdelight.registry.ItemsRegistry;
 import eu.midnightdust.motschen.rocks.RocksMain;
+import io.github.haykam821.woodenhoppers.Main;
+import io.github.haykam821.woodenhoppers.block.ModBlocks;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
 import net.fabricmc.fabric.api.resource.conditions.v1.DefaultResourceConditions;
@@ -18,6 +20,7 @@ import net.minecraft.item.Items;
 import net.minecraft.predicate.item.ItemPredicate;
 import net.minecraft.recipe.Ingredient;
 import net.minecraft.recipe.book.RecipeCategory;
+import net.minecraft.registry.tag.ItemTags;
 import net.minecraft.util.Identifier;
 
 import java.util.Collections;
@@ -79,6 +82,18 @@ public class SkysTheLimitRecipeProvider extends FabricRecipeProvider {
                 .input(Items.WHEAT_SEEDS)
                 .criterion("has_seeds", InventoryChangedCriterion.Conditions.items(Items.WHEAT_SEEDS))
                 .offerTo(withConditions(exporter, SkysTheLimitResourceConditions.allConfigBooleansEnabled("dirtToGrassBlock")));
+
+        new ShapedRecipeJsonBuilder(RecipeCategory.REDSTONE, ModBlocks.OAK_HOPPER, 1)
+                .group("wooden_hopper")
+                .pattern("p p")
+                .pattern("pcp")
+                .pattern(" p ")
+                .input('c', Items.CHEST)
+                .input('p', ItemTags.PLANKS)
+                .criterion("has_chest", InventoryChangedCriterion.Conditions.items(Items.CHEST))
+                .offerTo(withConditions(exporter,
+                        DefaultResourceConditions.allModsLoaded(Main.MOD_ID),
+                        SkysTheLimitResourceConditions.allConfigBooleansEnabled("planksToWhopper")));
 
         new ShapedRecipeJsonBuilder(RecipeCategory.BUILDING_BLOCKS, Items.MYCELIUM, 1)
                 .group("dirt")

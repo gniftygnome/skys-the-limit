@@ -75,6 +75,7 @@ dependencies {
     modImplementation "curse.maven:farmers-delight-fabric-482834:${project.farmersdelight_cursed_id}"
     modImplementation "curse.maven:midnightlib-488090:${project.midnightlib_cursed_id}"
     modImplementation "curse.maven:this-rocks-416283:${project.rocks_cursed_id}"
+    modImplementation "curse.maven:wooden-hoppers-406021:${project.woodenhoppers_cursed_id}"
 }
 
 processResources {
