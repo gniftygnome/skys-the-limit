@@ -51,6 +51,9 @@ public class SkysTheLimitConfig implements ConfigData {
     public Boolean blastCobbleToLava = true;
 
     @ConfigEntry.Category("recipes")
+    public Boolean craftableBell = true;
+
+    @ConfigEntry.Category("recipes")
     public Boolean craftableSaddle = true;
 
     @ConfigEntry.Category("recipes")

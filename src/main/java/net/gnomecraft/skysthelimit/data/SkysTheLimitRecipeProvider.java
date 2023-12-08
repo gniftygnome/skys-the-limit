@@ -65,6 +65,17 @@ public class SkysTheLimitRecipeProvider extends FabricRecipeProvider {
                         "stone_bucket_from_stones");
 
         // Sky block support recipes:
+        new ShapedRecipeJsonBuilder(RecipeCategory.DECORATIONS, Items.BELL, 1)
+                .group("bell")
+                .pattern("sgs")
+                .pattern("GGG")
+                .pattern("GgG")
+                .input('g', Items.GOLD_NUGGET)
+                .input('G', Items.GOLD_INGOT)
+                .input('s', Items.STICK)
+                .criterion("has_leather", InventoryChangedCriterion.Conditions.items(Items.GOLD_INGOT))
+                .offerTo(withConditions(exporter, SkysTheLimitResourceConditions.allConfigBooleansEnabled("craftableBell")));
+
         new ShapedRecipeJsonBuilder(RecipeCategory.BUILDING_BLOCKS, Items.COBBLESTONE, 1)
                 .group("stone")
                 .pattern("ss")
