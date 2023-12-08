@@ -16,10 +16,12 @@ This mod provides support for the Gnomecraft sky block ecosystem; namely:
   * Recipe for crafting Farmer's Delight tree bark into string.
   * Recipe for crafting string into Farmer's Delight rope.
   * Recipe for crafting mycelium from mushrooms and Farmer's Delight rich soil.
+  * Recipe for crafting mixed (incl. modded) planks into Wooden Hoppers' Oak Hopper.
   * Farmer's Delight cutting board recipes for Traverse, Terrestria, and Cinderscapes logs.
 * Adding recipes and loot for vanilla Minecraft features to improve sky block play.
   * Adds more ocean-related treasure loot to fishing.
   * Adds Overworld base stone to vanilla tool crafting recipes.
+  * Recipe for crafting sticks and gold into bells.
   * Recipe for crafting dirt and wheat seeds into grass blocks.
   * Recipe for crafting moss carpets and bone meal into moss blocks.
   * Recipe for crafting leather, string, and iron into saddles.  (But why?  Nobody knows...)
