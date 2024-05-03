@@ -2,6 +2,8 @@ package net.gnomecraft.skysthelimit.data;
 
 import com.nhoryzon.mc.farmersdelight.FarmersDelightMod;
 import com.nhoryzon.mc.farmersdelight.registry.ItemsRegistry;
+import com.terraformersmc.cinderscapes.Cinderscapes;
+import com.terraformersmc.cinderscapes.init.CinderscapesItems;
 import eu.midnightdust.motschen.rocks.RocksMain;
 import io.github.haykam821.woodenhoppers.Main;
 import io.github.haykam821.woodenhoppers.block.ModBlocks;
@@ -185,6 +187,19 @@ public class SkysTheLimitRecipeProvider extends FabricRecipeProvider {
                 Collections.singletonList(Items.POWDER_SNOW_BUCKET),
                 RecipeCategory.MISC,
                 Items.WATER_BUCKET,
+                0.1f, 200, "smelting");
+
+        // Missing recipe to blast/smelt Cinderscapes' Sulfur Ore into (refined) Sulfur
+        offerBlasting(withConditions(exporter, DefaultResourceConditions.allModsLoaded(Cinderscapes.NAMESPACE)),
+                Collections.singletonList(CinderscapesItems.SULFUR_ORE),
+                RecipeCategory.MISC,
+                CinderscapesItems.SULFUR,
+                0.1f, 100, "blasting");
+
+        offerSmelting(withConditions(exporter, DefaultResourceConditions.allModsLoaded(Cinderscapes.NAMESPACE)),
+                Collections.singletonList(CinderscapesItems.SULFUR_ORE),
+                RecipeCategory.MISC,
+                CinderscapesItems.SULFUR,
                 0.1f, 200, "smelting");
     }
 

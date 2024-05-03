@@ -72,6 +72,10 @@ dependencies {
     modImplementation "me.shedaniel.cloth:cloth-config-fabric:${project.clothconfig_version}"
     modImplementation "com.terraformersmc:modmenu:${project.modmenu_version}"
     // compatibility
+    modImplementation("com.terraformersmc:cinderscapes:${project.cinderscapes_version}") {
+        exclude(module: "cinderscapes-worldgen")
+        exclude(module: "biolith")
+    }
     modImplementation "curse.maven:farmers-delight-fabric-482834:${project.farmersdelight_cursed_id}"
     modImplementation "curse.maven:midnightlib-488090:${project.midnightlib_cursed_id}"
     modImplementation "curse.maven:this-rocks-416283:${project.rocks_cursed_id}"
