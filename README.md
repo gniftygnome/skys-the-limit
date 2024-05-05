@@ -9,6 +9,8 @@ Sky's the Limit requires [Cloth Config](https://github.com/shedaniel/cloth-confi
 
 This mod provides support for the Gnomecraft sky block ecosystem; namely:
 
+* Change game behaviors for multiplayer skyblock.
+  * Always drop an ender dragon egg at the end of the fight.
 * Adding glue recipes and loot for mods in Gnomecraft sky block mod packs.
   * Adds This Rocks! stone splitters as junk loot to fishing.
   * Recipe for crafting This Rocks! stone splitters into stone buckets.

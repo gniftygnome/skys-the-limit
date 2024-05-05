@@ -15,9 +15,13 @@ import net.gnomecraft.skysthelimit.SkysTheLimit;
 @SuppressWarnings("unused")
 @Config(name = SkysTheLimit.MOD_ID)
 public class SkysTheLimitConfig implements ConfigData {
-    @ConfigEntry.Category("blocks")
+    @ConfigEntry.Category("behavior")
     @ConfigEntry.Gui.PrefixText
     //@ConfigEntry.Gui.Tooltip
+    public Boolean alwaysDragonEgg = true;
+
+    @ConfigEntry.Category("blocks")
+    @ConfigEntry.Gui.PrefixText
     public Boolean fogCatcher = true;
 
 

@@ -8,6 +8,10 @@
   "modmenu.descriptionTranslation.skys-the-limit": "The Gnomecraft sky block support mod.",
   "text.autoconfig.skys-the-limit.title": "Skys the Limit: Configuration",
 
+  "text.autoconfig.skys-the-limit.category.behavior":  "Behavior",
+  "text.autoconfig.skys-the-limit.option.alwaysDragonEgg.@PrefixText": "You must restart Minecraft after changing settings below.",
+  "text.autoconfig.skys-the-limit.option.alwaysDragonEgg": "Ender Dragon always drops an egg?",
+
   "text.autoconfig.skys-the-limit.category.blocks":  "Blocks",
   "text.autoconfig.skys-the-limit.option.fogCatcher.@PrefixText": "You must restart Minecraft after changing settings below.",
   "text.autoconfig.skys-the-limit.option.fogCatcher": "Enable the Fog Catcher block?",

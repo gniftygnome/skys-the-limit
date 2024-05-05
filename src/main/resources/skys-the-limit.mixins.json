@@ -4,6 +4,7 @@
   "package": "net.gnomecraft.skysthelimit.mixin",
   "compatibilityLevel": "JAVA_17",
   "mixins": [
+    "MixinEnderDragonFight",
     "MixinPointedDripstoneBlock"
   ],
   "client": [
